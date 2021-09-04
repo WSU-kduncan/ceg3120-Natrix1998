@@ -16,3 +16,4 @@ Commit: To track and submit changes that you've made to your files and save them
 Push: Pushing will push the changes made on a local/given machine to the remote repo. Use "git push origin master", provided you have added or cloned the repo as described previously.
 
 # Proof
+![idc](awsinstance.PNG)
