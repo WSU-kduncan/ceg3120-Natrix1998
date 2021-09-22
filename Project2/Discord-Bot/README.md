@@ -13,4 +13,5 @@ Type !turmoil to get a random quote from prince Zuko.<br>
 ## Research
 To run the bot 24/7, you could host it on a virtual private server (VPS).<br>
 If you wanted to keep it local and always active, you could utilize a raspberry pi. <br>
-Pi's can run Linux and Python easily, and they do not use much power. This would be a good method to use if you had concerns about security or intellectual property (or just a general aversion to the cloud). 
+Pi's can run Linux and Python easily, and they do not use much power. This would be a good method to use if you had concerns about security or intellectual property (or just a general aversion to the cloud). <br>
+When using either method, I would recommend running the bot via the terminal, typing "CTRL + Z" to suspend it, and then typing "bg" to start it in the background. Finally, use jobs to determine what job number it is and disown it. For example, if it's job 1 type "disown %1". Now you can close the terminal and the bot will continue to run until the VPS or Pi is powered off. 
