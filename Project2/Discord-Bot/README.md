@@ -4,7 +4,7 @@ To get access to the Discord API for your bot, you need to access the discord de
 Then, create an application and a bot. <br>
 Copy the authorization token for the bot and save it to a .env file in the same folder as the python code for the bot.<br>
 Make sure you install python3, discord.py, and python-dotenv. <br>
-In the bot's code, use "TOKEN = os.getenv('DISCORD_TOKEN')" to pull the token into the bot.<br>
+In the bot's code, use "TOKEN = os.getenv('DISCORD_TOKEN')" to pull the token into the bot. The authorization token is like the username and password for the bot.<br>
 At the end of your python code, use "bot.run(TOKEN)" to interact with Discord's API and connect your bot to your server.
 ## Usage
 Type !help to get a list of all commands and they're descriptions.<br>
