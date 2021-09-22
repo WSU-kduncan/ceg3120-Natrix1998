@@ -10,7 +10,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
 bot = commands.Bot(command_prefix='!')
-@bot.command(name='uncle')
+@bot.command(name='uncle', help='Prints a random Iroh Quote')
 async def on_message(ctx):
     iroh_quotes = [
         'Sick of tea? That\'s like being sick of breathing.',
@@ -20,7 +20,7 @@ async def on_message(ctx):
     ]
     response = random.choice(iroh_quotes)
     await ctx.send(response)
-@bot.command(name='turmoil')
+@bot.command(name='turmoil', help='Prints a random Zuko Quote')
 async def on_message(ctx):
     zuko_quotes = [
         'HONOR!',
