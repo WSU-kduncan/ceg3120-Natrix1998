@@ -7,7 +7,7 @@
 3. **Internet gateway:** An internet gateway (at least for aws) is the component that lets your VPC communicate with the internet. It provides a target via the route tables (mentioned next) for routable traffic and it performs network address translation for instances with public IPs. 
 ![Creating the gateway and attaching it](images/gatewayandattach.PNG)<br>
 4. **Route Table:** Route tables determine where traffic from your instances/subnets/gateways gets sent, or routed. Not like a firewall but more like sending application traffic through the right ports (I think). <br>
-![Route table created and attached and associated.](images/part4.PNG)<br>
+![Route table created and attached and associated.](images/step4.PNG)<br>
 5. **Security Group:** Security groups are like firewalls. You can use them to control inbound and outbound traffic for your instance or a group of instances.<br>
 ![Security group created with proper rules and attched](images/secgroupupdate.PNG)<br>
 6. I created the key pair later and forgot to screenshot it. When I associated the elastic IP with the instance I had to create a key pair. I chose RSA and clicked the download button. It was automatically tied to the right instance.
@@ -23,4 +23,4 @@
 7. After creating the instance, I went to "Elastic IPs" under "Network Securities" and selected "Allocate Elastic IP address". I added a name tag then clicked create.
 8. ![Created Instance](images/createdone.PNG)
 9. I used `$ sudo ssh -i /pathtokey/obtainedfrom/part1/step6 ubuntu@AWSIP` to connect to the instance. Then I edited the `/etc/hosts` file with `sudo nano` to the new hostname. 
-10. ![Victory, ssh connected](images/SSHsuccess.PNG)
+10. ![Victory, ssh connected](images/SSHsuccess2.PNG)
