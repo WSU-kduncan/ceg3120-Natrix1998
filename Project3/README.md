@@ -21,5 +21,6 @@
 5. I added a tag in step 5 of the creation process and made it a name tag. For some reason I also misread this part and just noticed I named it "NSInstance". 
 6. In step six of the creation process I associated the security group from the dropdown, thanks to the tag. 
 7. After creating the instance, I went to "Elastic IPs" under "Network Securities" and selected "Allocate Elastic IP address". I added a name tag then clicked create.
-8. ![Created Instance](images/createdone.PNG).
-9. 
+8. ![Created Instance](images/createdone.PNG)
+9. I used `$ sudo ssh -i /pathtokey/obtainedfrom/part1/step6 ubuntu@AWSIP` to connect to the instance. Then I edited the `/etc/hosts` file with `sudo nano` to the new hostname. 
+10. ![Victory, ssh connected](images/SSHsuccess.PNG)
