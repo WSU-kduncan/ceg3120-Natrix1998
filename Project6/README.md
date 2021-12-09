@@ -13,7 +13,8 @@ The Dockerfile for building the container image should look something like the f
 With the Dockerfile ready, build the image with `$docker build -t site:1.0 path/to/dockerfile`.<br>
 Once the image has been created, run it with the following command `$docker run -dit -p 80:80 site`.<br>
 Since COPY uses absolute paths, my version of index.html will overwrite the version found in /var/www/html.<br>
-To view a running version of this project, open a web browser and enter the IP address associated with the container. You may or may not need to specify port 80, depending on your browser and network security settings. 
+To view a running version of this project, open a web browser and enter the IP address associated with the container. You may or may not need to specify port 80, depending on your browser and network security settings.<br>
+LINK TO THE OTHER REPOSITORY WITH THE WEBSITE/DOCKERFILE https://github.com/WSU-kduncan/cicd-Natrix1998.
 # Part 2
 
 # Part 3
